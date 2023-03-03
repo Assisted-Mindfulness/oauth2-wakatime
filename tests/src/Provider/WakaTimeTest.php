@@ -100,18 +100,14 @@ class WakaTimeTest extends TestCase
         $this->assertEquals($id, $user->toArray()['id']);
     }
 
-
     protected function setUp(): void
     {
         $this->provider = new WakaTime(
             [
-                'clientId' => 'mock_client_id',
+                'clientId'     => 'mock_client_id',
                 'clientSecret' => 'mock_secret',
-                'redirectUri' => 'none',
+                'redirectUri'  => 'none',
             ]
         );
     }
-
-
-
 }
